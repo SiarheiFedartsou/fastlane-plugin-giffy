@@ -15,7 +15,6 @@ module Fastlane
           json_body = Net::HTTP.get(uri)
           json_hash = JSON.parse(json_body)
 
-          puts json_hash.to_s
           if params[:original_gif]
             return json_hash['data']['image_url']
           else

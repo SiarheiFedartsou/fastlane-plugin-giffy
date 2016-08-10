@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.author        = %q{SiarheiFiedartsou}
   spec.email         = %q{siarhei.fedartsou@gmail.com}
 
-  spec.summary       = %q{giffy}
+  spec.summary       = %q{Fastlane plugin for Giffy.com API}
   spec.homepage      = "https://github.com/SiarheiFedartsou/fastlane-plugin-giffy"
   spec.license       = "MIT"
 
