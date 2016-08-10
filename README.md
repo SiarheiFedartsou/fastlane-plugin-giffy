@@ -1,5 +1,6 @@
 # giffy plugin
 
+[![CI Status](http://img.shields.io/travis/SiarheiFedartsou/fastlane-plugin-giffy.svg?style=flat)](https://travis-ci.org/SiarheiFedartsou/fastlane-plugin-giffy)
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-giffy)
 
 ## Getting Started
@@ -12,15 +13,39 @@ fastlane add_plugin giffy
 
 ## About giffy
 
-giffy
+Allows to add some more fun to your development process. Currently provides 2 actions:
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+### giffy_random_gif_url
+
+```ruby
+giffy_random_gif_url(
+  api_key: 'YOUR_GIFFY_API_KEY',
+  tag: 'cats',
+  original_gif: false # optional, default value is false
+)
+```
+### giffy_random_sticker_url
+
+```ruby
+giffy_random_sticker_url(
+  api_key: 'YOUR_GIFFY_API_KEY',
+  tag: 'cats',
+  original_gif: false # optional, default value is false
+)
+```
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`. 
+Like a the simplest example, you can add random fun GIF to your Slack notification:
 
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+```
+slack(message: "Application is successfully released to the App Store.",
+      channel: "#releases",
+      success: true,
+      attachment_properties: {
+        image_url: giffy_random_gif_url(tag: 'release', api_key: 'dc6zaTOxFJmzC')
+      })
+```
 
 ## Run tests for this plugin
 
@@ -30,7 +55,7 @@ To run both the tests, and code style validation, run
 rake
 ```
 
-To automatically fix many of the styling issues, use 
+To automatically fix many of the styling issues, use
 ```
 rubocop -a
 ```
