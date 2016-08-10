@@ -49,8 +49,8 @@ slack(message: "Application is successfully released to the App Store.",
       })
 ```
 
-![Screenshot](./screenshots/success.png =200px)
-![Screenshot](./screenshots/failure.png =200px)
+![Screenshot](./screenshots/success.png =200x)
+![Screenshot](./screenshots/failure.png =200x)
 
 ## Run tests for this plugin
 
