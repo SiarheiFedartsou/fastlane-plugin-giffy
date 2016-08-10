@@ -48,9 +48,8 @@ slack(message: "Application is successfully released to the App Store.",
         image_url: giffy_random_gif_url(tag: 'release', api_key: 'dc6zaTOxFJmzC')
       })
 ```
-<img src="./screenshots/success.png" width="200">
-![Screenshot](./screenshots/success.png =200x)
-![Screenshot](./screenshots/failure.png =200x)
+<img src="./screenshots/success.png" width="400">
+<img src="./screenshots/failure.png" width="400">
 
 ## Run tests for this plugin
 
