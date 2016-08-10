@@ -5,7 +5,6 @@ module Fastlane
       # as `Helper::GiffyHelper.your_method`
       #
 
-
       def self.get_random_gif_url(gifs_or_stickers, params)
         require 'net/http'
         require 'json'
