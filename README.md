@@ -36,9 +36,9 @@ giffy_random_sticker_url(
 
 ## Example
 
-Like a the simplest example, you can add random fun GIF to your Slack notification:
+Like the simplest example, you can add random fun GIF to your Slack notification:
 
-```
+```ruby
 slack(message: "Application is successfully released to the App Store.",
       channel: "#releases",
       success: true,
