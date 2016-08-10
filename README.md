@@ -34,6 +34,8 @@ giffy_random_sticker_url(
 )
 ```
 
+Go to [Giffy API docs](https://github.com/Giphy/GiphyAPI) for more information about obtaining API key.
+
 ## Example
 
 Like the simplest example, you can add random fun GIF to your Slack notification:
@@ -46,6 +48,9 @@ slack(message: "Application is successfully released to the App Store.",
         image_url: giffy_random_gif_url(tag: 'release', api_key: 'dc6zaTOxFJmzC')
       })
 ```
+
+![Screenshot](./screenshots/success.png)
+![Screenshot](./screenshots/failure.png)
 
 ## Run tests for this plugin
 
